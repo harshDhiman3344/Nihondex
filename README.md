@@ -1,1 +1,1 @@
-#Open Source Japanese learning platform!! 🗾🏯🌸😊
+# Open Source Japanese learning platform!! 🗾🏯🌸😊
