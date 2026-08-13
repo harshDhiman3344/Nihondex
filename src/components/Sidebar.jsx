@@ -28,7 +28,7 @@ export default function Sidebar({ currentView, setView, srs, activeTheme, setThe
       {/* Brand Header */}
       <div className="sidebar-brand">
         <h1 className="brand-title">Nihondojo</h1>
-        <p className="brand-sub font-hand">にほんどじょう 🌿</p>
+        <p className="brand-sub font-hand">にほんどじょう</p>
       </div>
 
       {/* User Progress Widget */}
@@ -99,7 +99,7 @@ export default function Sidebar({ currentView, setView, srs, activeTheme, setThe
 
       {/* Cute cottagecore footer */}
       <div className="sidebar-footer">
-        <p>🌿 Study hard, grow steady</p>
+        <p>Study hard, grow steady</p>
         <span>Nihondojo v1.0.0 (N5)</span>
       </div>
     </aside>

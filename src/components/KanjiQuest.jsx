@@ -131,7 +131,7 @@ export default function KanjiQuest({ srs }) {
     <div className="kanji-quest-view animate-fade-in">
       <div className="journal-header">
         <div>
-          <h2>字 Kanji Quest Heatmap</h2>
+          <h2>Kanji Quest Heatmap</h2>
           <p className="journal-subtitle font-hand">Practice N5 Kanji readings and writing stroke orders</p>
         </div>
       </div>

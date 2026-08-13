@@ -104,7 +104,7 @@ export default function Vocabulary({ srs }) {
     <div className="vocab-view animate-fade-in">
       <div className="journal-header">
         <div>
-          <h2>語 Vocabulary Syllabus Deck</h2>
+          <h2>Vocabulary Syllabus Deck</h2>
           <p className="journal-subtitle font-hand">Practice N5 words, organized by lesson and section topic</p>
         </div>
       </div>
@@ -145,7 +145,7 @@ export default function Vocabulary({ srs }) {
                   className="btn-pressable font-semibold py-2 px-3 text-sm text-left justify-start w-full bg-card"
                   style={{ textOverflow: 'ellipsis', overflow: 'hidden' }}
                 >
-                  <option value="all">📚 All Lessons</option>
+                  <option value="all">All Lessons</option>
                   {uniqueLessons.map(lesson => (
                     <option key={lesson} value={lesson}>{lesson}</option>
                   ))}

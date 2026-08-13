@@ -34,7 +34,7 @@ export default function Dashboard({ srs, setView }) {
       {/* Journal Title Bar */}
       <div className="journal-header">
         <div>
-          <h2>🌿 Nihondojo Dashboard</h2>
+          <h2>Nihondojo Dashboard</h2>
           <p className="journal-subtitle font-hand">Your cottage-style Japanese journal</p>
         </div>
         <div className="dashboard-stats flex-center gap-4">

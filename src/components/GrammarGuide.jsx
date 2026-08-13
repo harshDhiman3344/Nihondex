@@ -131,7 +131,7 @@ export default function GrammarGuide({ srs }) {
     <div className="grammar-view animate-fade-in">
       <div className="journal-header">
         <div>
-          <h2>文 Grammar Guide & Sentence Builder</h2>
+          <h2>Grammar Guide & Sentence Builder</h2>
           <p className="journal-subtitle font-hand">Explore N5 structures and construct grammatically correct sentences</p>
         </div>
       </div>

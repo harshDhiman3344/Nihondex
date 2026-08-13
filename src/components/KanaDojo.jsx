@@ -250,7 +250,7 @@ export default function KanaDojo({ srs }) {
                 You got <strong>{quizScore} out of 10</strong> correct answers!
               </p>
               <div className="xp-earned flex-center font-hand mb-8">
-                🌿 +{quizScore * 5} XP Points Earned
+                +{quizScore * 5} XP Points Earned
               </div>
               <div className="flex gap-4">
                 <button onClick={startQuiz} className="btn-pressable btn-primary">
