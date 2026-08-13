@@ -4,13 +4,11 @@ import {
   BookOpen, 
   Pencil, 
   Layers, 
-  Bookmark, 
   Sparkles, 
-  Flame, 
-  Trophy 
+  Flame 
 } from 'lucide-react';
 
-export default function Sidebar({ currentView, setView, srs }) {
+export default function Sidebar({ currentView, setView, srs, activeTheme, setTheme }) {
   const { xp, level, streak } = srs;
   
   // Calculate progress to next level
@@ -30,7 +28,7 @@ export default function Sidebar({ currentView, setView, srs }) {
       {/* Brand Header */}
       <div className="sidebar-brand">
         <h1 className="brand-title">Nihondojo</h1>
-        <p className="brand-sub">にほんどじょう 🌿</p>
+        <p className="brand-sub font-hand">にほんどじょう 🌿</p>
       </div>
 
       {/* User Progress Widget */}
@@ -71,6 +69,33 @@ export default function Sidebar({ currentView, setView, srs }) {
           );
         })}
       </nav>
+
+      {/* Cozy Theme Selector Widget */}
+      <div className="sidebar-theme-selector">
+        <span className="theme-label font-sans">Theme / テーマ</span>
+        <div className="theme-dots">
+          <button 
+            onClick={() => setTheme('sage')}
+            className={`theme-dot dot-sage ${activeTheme === 'sage' ? 'active' : ''}`}
+            title="Sage Garden"
+          />
+          <button 
+            onClick={() => setTheme('aesthetic')}
+            className={`theme-dot dot-aesthetic ${activeTheme === 'aesthetic' ? 'active' : ''}`}
+            title="Aesthetic Arch / Tokyo Night"
+          />
+          <button 
+            onClick={() => setTheme('sakura')}
+            className={`theme-dot dot-sakura ${activeTheme === 'sakura' ? 'active' : ''}`}
+            title="Sakura Blossom"
+          />
+          <button 
+            onClick={() => setTheme('cocoa')}
+            className={`theme-dot dot-cocoa ${activeTheme === 'cocoa' ? 'active' : ''}`}
+            title="Warm Cocoa"
+          />
+        </div>
+      </div>
 
       {/* Cute cottagecore footer */}
       <div className="sidebar-footer">

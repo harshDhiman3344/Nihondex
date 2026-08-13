@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Noto+Sans+JP:wght@400;500;700&family=Outfit:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Noto+Sans+JP:wght@400;500;700&family=Outfit:wght@400;500;600;700&family=Fira+Code:wght@400;600&display=swap');
 
 :root {
-  /* Cottagecore & Vintage Journal Color Palette */
+  /* Default Theme (Sage) */
   --bg-page: #faf7f2;
   --bg-card: #fdfcfb;
   --bg-card-secondary: #f6f3ed;
@@ -25,7 +25,7 @@
   /* Fonts */
   --font-sans: 'Outfit', 'Noto Sans JP', sans-serif;
   --font-handwritten: 'Klee One', 'Noto Sans JP', sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-mono: 'Fira Code', ui-monospace, monospace;
 
   /* Shadows */
   --shadow-flat: 3px 3px 0px var(--color-border);
@@ -34,6 +34,102 @@
   
   /* Transition speed */
   --transition-cozy: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* SAGE GARDEN THEME (Standard Cozy) */
+body.theme-sage {
+  --bg-page: #faf7f2;
+  --bg-card: #fdfcfb;
+  --bg-card-secondary: #f6f3ed;
+  --color-primary: #768a7d;
+  --color-primary-light: #e4ebe7;
+  --color-primary-dark: #53645a;
+  --color-accent: #c4876b;
+  --color-accent-light: #f4eae4;
+  --color-accent-dark: #a0644a;
+  --color-text-title: #38322c;
+  --color-text-body: #5c534a;
+  --color-text-muted: #8c8174;
+  --color-border: #4d443c;
+  --color-border-light: rgba(77, 68, 60, 0.15);
+  --color-grid-line: rgba(118, 138, 125, 0.12);
+  --font-handwritten: 'Klee One', 'Noto Sans JP', sans-serif;
+}
+
+/* AESTHETIC ARCH / TOKYO NIGHT (Unixporn inspired dark console) */
+body.theme-aesthetic {
+  --bg-page: #a0aed4;            /* Cozy lavender periwinkle */
+  --bg-card: #1e1e2e;            /* Deep Catppuccin Mocha charcoal */
+  --bg-card-secondary: #11111b;  /* Dark crust */
+  
+  --color-primary: #cba6f7;       /* Pastel purple */
+  --color-primary-light: #313244; /* Charcoal panel highlight */
+  --color-primary-dark: #89b4fa;  /* Light blue */
+  
+  --color-accent: #89dceb;        /* Cyber cyan */
+  --color-accent-light: #181825;  /* Cozy dark overlay */
+  --color-accent-dark: #a6e3a1;   /* Neon pastel green */
+  
+  --color-text-title: #f5e0dc;    /* Soft white rosewater */
+  --color-text-body: #cdd6f4;     /* Light gray white text */
+  --color-text-muted: #7f849c;    /* Slate gray */
+  
+  --color-border: #11111b;        /* Ink black borders */
+  --color-border-light: rgba(17, 17, 27, 0.55);
+  --color-grid-line: rgba(17, 17, 27, 0.15);  /* Ink grid overlay */
+  --font-handwritten: 'Fira Code', 'Fira Mono', monospace; /* Monospace override */
+  
+  /* Retain flat retro shadows */
+  --shadow-flat: 4px 4px 0px var(--color-border);
+  --shadow-flat-large: 7px 7px 0px var(--color-border);
+}
+
+/* SAKURA BLOSSOM (Soft blush note page) */
+body.theme-sakura {
+  --bg-page: #fdf5f6;            /* Soft pink blush */
+  --bg-card: #fffcfd;            
+  --bg-card-secondary: #fce2e7;  
+  
+  --color-primary: #d98295;       /* Cherry blossom pink */
+  --color-primary-light: #faedf0; 
+  --color-primary-dark: #b8586c;  
+  
+  --color-accent: #e59da8;        
+  --color-accent-light: #fef5f7;  
+  --color-accent-dark: #8a2b3f;   
+  
+  --color-text-title: #4a2c33;    /* Espresso dark berry */
+  --color-text-body: #6b4b52;     
+  --color-text-muted: #9a757d;    
+  
+  --color-border: #4a2c33;        
+  --color-border-light: rgba(74, 44, 51, 0.15);
+  --color-grid-line: rgba(217, 130, 149, 0.12);
+  --font-handwritten: 'Klee One', 'Noto Sans JP', sans-serif;
+}
+
+/* COCOA KRAFT (Warm recycled paper) */
+body.theme-cocoa {
+  --bg-page: #f2ece4;            /* Recycled kraft cardboard */
+  --bg-card: #faf6f0;            
+  --bg-card-secondary: #e8dfd3;  
+  
+  --color-primary: #8c7561;       /* Milky coffee brown */
+  --color-primary-light: #f2eae0; 
+  --color-primary-dark: #5e4b3c;  
+  
+  --color-accent: #bf7a5c;        /* Terracotta orange */
+  --color-accent-light: #fdf4ed;  
+  --color-accent-dark: #8a4f36;   
+  
+  --color-text-title: #362a21;    /* Deep chocolate dark */
+  --color-text-body: #59493c;     
+  --color-text-muted: #8a7b6e;    
+  
+  --color-border: #362a21;        
+  --color-border-light: rgba(54, 42, 33, 0.15);
+  --color-grid-line: rgba(140, 117, 97, 0.12);
+  --font-handwritten: 'Klee One', 'Noto Sans JP', sans-serif;
 }
 
 * {
@@ -57,6 +153,7 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, background-image 0.3s ease, color 0.3s ease;
 }
 
 #root {
@@ -64,6 +161,19 @@ body {
   width: 100vw;
   min-height: 100vh;
   position: relative;
+}
+
+/* Font helper utilities */
+.font-hand {
+  font-family: var(--font-handwritten), sans-serif;
+}
+
+.font-sans {
+  font-family: var(--font-sans), sans-serif;
+}
+
+.font-mono {
+  font-family: var(--font-mono), monospace;
 }
 
 /* Typography */
@@ -107,6 +217,7 @@ p {
   position: sticky;
   top: 0;
   z-index: 10;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .nd-main {
@@ -163,6 +274,7 @@ p {
   padding: 14px;
   margin-bottom: 24px;
   box-shadow: 2px 2px 0px var(--color-border);
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-streak {
@@ -184,13 +296,14 @@ p {
   border-radius: 4px;
   margin: 8px 0;
   overflow: hidden;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .xp-bar-fill {
   height: 100%;
   background-color: var(--color-primary);
   border-radius: 4px;
-  transition: width 0.4s ease-out;
+  transition: width 0.4s ease-out, background-color 0.3s ease;
 }
 
 .xp-subtext {
@@ -257,6 +370,67 @@ p {
   color: var(--color-text-muted);
 }
 
+/* Theme Changer Widget in Sidebar */
+.sidebar-theme-selector {
+  border-top: 1.5px dashed var(--color-border-light);
+  padding-top: 16px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.theme-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  letter-spacing: 0.5px;
+}
+
+.theme-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.theme-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-border);
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 1.5px 1.5px 0px var(--color-border);
+}
+
+.theme-dot:hover {
+  transform: translateY(-2px);
+  box-shadow: 2.5px 2.5px 0px var(--color-border);
+}
+
+.theme-dot.active {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 2.5px 2.5px 0px var(--color-border);
+}
+
+.theme-dot.active::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-border);
+}
+
+.dot-sage { background-color: #768a7d; }
+.dot-aesthetic { background-color: #a0aed4; }
+.dot-sakura { background-color: #d98295; }
+.dot-cocoa { background-color: #8c7561; }
+
 /* Sidebar Footer */
 .sidebar-footer {
   border-top: 1.5px dashed var(--color-border-light);
@@ -264,6 +438,7 @@ p {
   text-align: center;
   font-size: 0.75rem;
   color: var(--color-text-muted);
+  margin-top: 16px;
 }
 
 .sidebar-footer span {
@@ -287,7 +462,7 @@ p {
 
 .card-cozy:hover {
   transform: translate(-1px, -1px);
-  box-shadow: 4px 4px 0px var(--color-border);
+  box-shadow: var(--shadow-flat-large);
 }
 
 /* Dashboard Grid Layout */
@@ -348,7 +523,7 @@ p {
 
 /* Welcome Card */
 .welcome-card {
-  background-color: #faf6ef;
+  background-color: var(--bg-card-secondary);
 }
 .welcome-title {
   font-size: 1.5rem;
@@ -392,13 +567,26 @@ p {
   box-shadow: 2px 2px 0px var(--color-border);
 }
 .garden-visualizer-box {
-  background-color: #e2ede5; /* Grass green clearing */
+  background-color: #e2ede5; /* Grass green clearing default */
   border: 1.5px solid var(--color-border);
   border-radius: 12px;
   padding: 24px;
   min-height: 250px;
   box-shadow: inset 1px 1px 4px rgba(77, 68, 60, 0.15);
+  transition: all 0.3s ease;
 }
+
+/* Heatmap themed adjustment for garden clearing */
+body.theme-aesthetic .garden-visualizer-box {
+  background-color: #1a1b26; /* Dark void space for Unixporn look */
+}
+body.theme-sakura .garden-visualizer-box {
+  background-color: #f7d2da; /* Pink blossom ground */
+}
+body.theme-cocoa .garden-visualizer-box {
+  background-color: #dfd5c6; /* Kraft brown ground */
+}
+
 .garden-plot-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -429,6 +617,11 @@ p {
   border-style: dotted;
   opacity: 0.6;
 }
+
+body.theme-aesthetic .slot-locked {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
 .slot-emoji {
   font-size: 2.2rem;
   margin-bottom: 4px;
@@ -456,7 +649,7 @@ p {
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--color-text-title);
-  color: #fff;
+  color: var(--bg-card);
   border-radius: 8px;
   padding: 8px 12px;
   font-size: 0.75rem;
@@ -508,12 +701,15 @@ p {
   padding: 4px;
   border-radius: 8px;
   border: 1px solid var(--color-border);
-  background-color: #fff;
+  background-color: var(--bg-card);
 }
 .checklist-icon.c-kana { color: var(--color-primary-dark); }
 .checklist-icon.c-kanji { color: var(--color-accent); }
 .checklist-icon.c-vocab { color: #5a7ea8; }
 .checklist-icon.c-grammar { color: #a85a97; }
+
+body.theme-aesthetic .checklist-icon.c-vocab { color: #89dceb; }
+body.theme-aesthetic .checklist-icon.c-grammar { color: #f5c2e7; }
 
 .item-info strong {
   font-size: 0.95rem;
@@ -677,10 +873,22 @@ p {
   color: #276b32 !important;
 }
 
+body.theme-aesthetic .opt-correct {
+  background-color: #2e3c30 !important;
+  border-color: #a6e3a1 !important;
+  color: #a6e3a1 !important;
+}
+
 .opt-incorrect {
   background-color: #f7e0d8 !important;
   border-color: var(--color-accent-dark) !important;
   color: var(--color-accent-dark) !important;
+}
+
+body.theme-aesthetic .opt-incorrect {
+  background-color: #3e282a !important;
+  border-color: #f38ba8 !important;
+  color: #f38ba8 !important;
 }
 
 .opt-muted {
@@ -691,11 +899,13 @@ p {
   color: #276b32;
   margin-left: 8px;
 }
+body.theme-aesthetic .opt-icon-check { color: #a6e3a1; }
 
 .opt-icon-x {
   color: var(--color-accent-dark);
   margin-left: 8px;
 }
+body.theme-aesthetic .opt-icon-x { color: #f38ba8; }
 
 /* Quiz Results */
 .quiz-results {
@@ -773,11 +983,21 @@ p {
   border-color: #a2bcae;
   color: #3b5044;
 }
+body.theme-aesthetic .heatmap-started {
+  background-color: #313244;
+  border-color: #45475a;
+  color: #bac2de;
+}
 
 .heatmap-familiar {
   background-color: #adcfbc;
   border-color: #648572;
   color: #1e3427;
+}
+body.theme-aesthetic .heatmap-familiar {
+  background-color: #45475a;
+  border-color: #585b70;
+  color: #cdd6f4;
 }
 
 .heatmap-mastered {
@@ -785,11 +1005,21 @@ p {
   border-color: #2f3e34;
   color: #fff;
 }
+body.theme-aesthetic .heatmap-mastered {
+  background-color: var(--color-primary);
+  border-color: var(--color-border);
+  color: var(--color-border);
+}
 
 .heatmap-due {
   background-color: var(--color-accent-light);
   border-color: var(--color-accent);
   color: var(--color-accent-dark);
+}
+body.theme-aesthetic .heatmap-due {
+  background-color: #f38ba8;
+  border-color: var(--color-border);
+  color: var(--color-border);
 }
 
 /* Heatmap Legend */
@@ -891,6 +1121,11 @@ p {
 .srs-good:hover { background-color: #edf5f0; }
 .srs-easy:hover { background-color: var(--color-primary-light); }
 
+body.theme-aesthetic .srs-forgot:hover { background-color: #3b282c; }
+body.theme-aesthetic .srs-hard:hover { background-color: #3f312c; }
+body.theme-aesthetic .srs-good:hover { background-color: #293836; }
+body.theme-aesthetic .srs-easy:hover { background-color: #36293d; }
+
 /* Vocabulary Page Styles */
 .vocab-controls {
   background-color: var(--bg-card);
@@ -921,11 +1156,17 @@ p {
 /* Dropdown select design override */
 select.btn-pressable {
   appearance: none;
-  background-image: url("data:image/svg+xml;utf8,<svg fill='%233d372e' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%2338322c' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
   background-repeat: no-repeat;
   background-position: right 10px center;
   padding-right: 32px !important;
   text-align: left;
+  background-color: var(--bg-card);
+  color: var(--color-text-title);
+}
+
+body.theme-aesthetic select.btn-pressable {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23f5e0dc' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
 }
 
 .vocab-table {
@@ -953,7 +1194,7 @@ select.btn-pressable {
 }
 
 .row-due {
-  background-color: #fcf6f3;
+  background-color: var(--color-accent-light);
 }
 
 .vocab-pos-badge {
@@ -978,9 +1219,15 @@ select.btn-pressable {
   border: 1px solid var(--color-accent-dark);
 }
 
+body.theme-aesthetic .badge-due {
+  background-color: #f38ba8;
+  color: #11111b;
+  border-color: #f38ba8;
+}
+
 .badge-learned {
   color: var(--color-primary-dark);
-  background-color: #edf5f0;
+  background-color: var(--color-primary-light);
   border-radius: 4px;
   font-size: 0.7rem;
   font-weight: 600;
@@ -1079,17 +1326,24 @@ select.btn-pressable {
 }
 
 .border-success-line {
-  border-color: #55a85f !important;
+  border-color: var(--color-accent-dark) !important;
 }
+body.theme-aesthetic .border-success-line { border-color: #a6e3a1 !important; }
+
 .bg-success-fill {
-  background-color: #edf5f0 !important;
+  background-color: var(--color-primary-light) !important;
 }
+body.theme-aesthetic .bg-success-fill { background-color: #2e3c30 !important; }
+
 .border-error-line {
   border-color: var(--color-accent) !important;
 }
+body.theme-aesthetic .border-error-line { border-color: #f38ba8 !important; }
+
 .bg-error-fill {
-  background-color: #faf5f2 !important;
+  background-color: var(--color-accent-light) !important;
 }
+body.theme-aesthetic .bg-error-fill { background-color: #3e282a !important; }
 
 .block-card {
   padding: 8px 16px !important;
@@ -1109,6 +1363,9 @@ select.btn-pressable {
   border: 1.1px solid var(--color-border-light);
   border-radius: 16px;
   width: 100%;
+}
+body.theme-aesthetic .scrambled-deck {
+  background-color: rgba(255, 255, 255, 0.02);
 }
 
 .prompt-english {
@@ -1131,7 +1388,64 @@ select.btn-pressable {
   justify-content: space-between;
 }
 
-/* Animations */
+/* 3D Pressed Buttons */
+.btn-pressable {
+  background-color: var(--bg-card);
+  border: 1.5px solid var(--color-border);
+  color: var(--color-text-title);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: var(--shadow-flat);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.25s ease;
+}
+
+.btn-pressable:hover {
+  background-color: var(--bg-card-secondary);
+}
+
+.btn-primary {
+  background-color: var(--color-primary-light);
+  color: var(--color-text-title);
+}
+
+.btn-accent {
+  background-color: var(--color-accent-light);
+  color: var(--color-text-title);
+}
+
+.btn-pressable:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px var(--color-border);
+}
+
+/* Floating Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Shake Animation for incorrect builders */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.animate-shake {
+  animation: shake 0.3s ease-in-out;
+}
+
 .animate-fade-in {
   animation: fadeIn 0.4s ease-out forwards;
 }
